@@ -1,6 +1,12 @@
 is-object-brace
 ===============
 
+[![MIT LICENSE](https://camo.githubusercontent.com/377eda57da4e5aff0480df11e5a0ada0b5d95903/687474703a2f2f696d672e736869656c64732e696f2f6e706d2f6c2f69732d6f626a6563742e737667)](https://github.com/iTonyYo/WSK_IMAGE/blob/master/LICENSE '点击 · Click')
+
+![NPM · downloads, rank and stars](https://nodei.co/npm/is-object-brace.png?downloads=true&downloadRank=true&stars=true)
+
+![is-object-brace](http://e.hiphotos.baidu.com/image/pic/item/95eef01f3a292df5541379a1bf315c6035a873b6.jpg)
+
 
 
 Primer
