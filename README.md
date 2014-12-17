@@ -1,2 +1,73 @@
 is-object-brace
 ===============
+
+
+
+Primer
+------
+
+I used a few utility functions when I am writing [*node-find-folder*](https://github.com/iTonyYo/node-find-folder '点击 · Click'), such as: [*is-file*](https://www.npmjs.com/package/is-file '点击 · Click'), [*is-directory*](https://www.npmjs.com/package/is-directory '点击 · Click'), [*amp-is-array*](https://www.npmjs.com/package/amp-is-array '点击 · Click') and so on! But there is no module for judging whether a variable or incoming parameters is the "{}" object accurately... [*isobject*](https://www.npmjs.com/package/isobject '点击 · Click') is really similar with what I was thinking, but I still given it up, because it didn't consider some objective circumstances... And the author's maintenance frequency is very low,so I dismissed the idea of sending pull request on [*isobject*](https://www.npmjs.com/package/isobject '点击 · Click') by Github! I decide to write a node.js module to implement this demand by myself, because I think this kind of logic code should not be repeated, and I really don't want it to influence me to write the main logic!
+
+
+
+Usage
+-----
+
+**Install**
+
+![how to install](https://nodei.co/npm/is-object-brace.png?mini=true)
+
+Just use `npm install is-object-brace` command. Of course you can use `--save-dev` param after the command above to save `is-object-brace` to `package.json`
+
+**Code details,**
+
+```js
+var isObjectBrace, rslt;
+
+isObjectBrace = require('is-object-brace')
+
+rslt = isObjectBrace({});                              //output: true
+
+rslt = isObjectBrace({1:"a", 2:"b"});                  //output: true
+
+rslt = isObjectBrace(["string", 2, true, new Date()]); //output: false
+
+rslt = isObjectBrace('1');                             //output: false
+
+rslt = isObjectBrace(true);                            //output: false
+
+rslt = isObjectBrace(new Function());                  //output: false
+
+...
+```
+
+
+
+Helping `is-object-brace`
+-------------------------
+
+#### I found a bug!
+
+If you found a repeatable bug, and tips from [*Usage*]( '点击 · Click') section didn't help, then be sure to [*search existing issues*](https://github.com/iTonyYo/is-object-brace/issues '点击 · Click') first. If there's no content is similar with the problem you found, welcome you to create a new issue you found!
+
+#### I want to help with the code!
+
+Awesome! I use Github to managed code. So there are lots of ways you can help. First read [*CONTRIBUTING.md*](https://github.com/iTonyYo/is-object-brace/blob/master/doc/CONTRIBUTION.md '点击 · Click'), then learn [*be social with Github*](https://help.github.com/articles/be-social/) and [*how to pull the repo*](https://help.github.com/articles/creating-a-pull-request/ '点击 · Click') on `node-find-folder`.
+
+
+
+Contact info
+------------
+
++ **Twitter:** [@iTonyYo](https://twitter.com/iTonyYo)
+
++ **Blog:** https://medium.com/@itonyyo
+
++ **More? Check here:** http://www.evernote.com/l/AIdKUowUzdNLbK_gDY54E0gAqdcNuAol59E/
+
+
+
+LICENSE
+-------
+
+See also [*LICENSE*](https://github.com/iTonyYo/is-object-brace/blob/master/LICENSE '点击 · Click') .

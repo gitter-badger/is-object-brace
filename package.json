@@ -1,0 +1,119 @@
+{
+
+	"name": "is-object-brace",
+
+	"description": "Utility function for judging whether it is the “{}” object accurately.",
+
+	"keywords": [
+
+		"is-object-brace",
+
+		"is-brace-object",
+
+		"isObject",
+
+		"is-object",
+
+		"isobject",
+
+		"utility functions",
+
+		"node.js module"
+
+	],
+
+	"version": "0.1.0",
+
+	"author": {
+
+		"name": "沈维忠 ( Shen Weizhong / Tony Stark )",
+
+		"email": "swzyocowboy@icloud.com",
+
+		"url": "http://itonyyo.github.io/"
+
+	},
+
+	"homepage": "https://github.com/iTonyYo/is-object-brace",
+
+	"repository": {
+
+		"type": "git",
+
+		"url": "https://github.com/iTonyYo/is-object-brace.git"
+
+	},
+
+	"bugs": {
+
+		"url": "https://github.com/iTonyYo/is-object-brace/issues"
+
+	},
+
+	"private": false,
+
+	"scripts": {
+
+		"test": "gulp mocha"
+
+	},
+
+	"engines": {
+
+		"node": ">=0.10.33"
+
+	},
+
+	"dependencies": {},
+
+	"devDependencies": {
+
+		"gulp": "^3.8.10",
+
+		"require-dir": "^0.1.0",
+
+		"run-sequence": "^1.0.2",
+
+		"glob": "^4.3.1",
+
+		"del": "^1.1.0",
+
+		"xtend": "^4.0.0",
+
+		"minimist": "^1.1.0",
+
+		"is-file": "^1.0.0",
+
+		"is-directory": "^0.2.3",
+
+		"lazypipe": "^0.2.2",
+
+		"merge-stream": "^0.1.6",
+
+		"gulp-util": "^3.0.1",
+
+		"gulp-if": "^1.2.5",
+
+		"gulp-changed": "^1.1.0",
+
+		"gulp-plumber": "^0.6.6",
+
+		"gulp-rename": "^1.2.0",
+
+		"gulp-notify": "^2.1.0",
+
+		"gulp-coffee": "^2.2.0",
+
+		"gulp-coffeelint": "^0.4.0",
+
+		"gulp-uglify": "^1.0.2",
+
+		"gulp-mocha": "^2.0.0",
+
+		"gulp-load-plugins": "^0.8.0"
+
+	},
+
+	"licenses": "MIT"
+
+}
