@@ -83,3 +83,7 @@ LICENSE
 -------
 
 See also [*LICENSE*](https://github.com/iTonyYo/is-object-brace/blob/master/LICENSE '点击 · Click') .
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/iTonyYo/is-object-brace/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
