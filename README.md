@@ -30,6 +30,8 @@ Just use `npm install is-object-brace` command. Of course you can use `--save-de
 **Code details,**
 
 ```js
+...
+
 var isObjectBrace, rslt;
 
 ...
@@ -49,7 +51,6 @@ rslt          = isObjectBrace(true);                            //output: false
 rslt          = isObjectBrace(new Function());                  //output: false
 
 ...
-```
 ```
 
 
