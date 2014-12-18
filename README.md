@@ -19,6 +19,8 @@ I used a few utility functions when I am writing [*node-find-folder*](https://gi
 Usage
 -----
 
+> I made it support UMD (Universal Module Definition) patterns, so it can work everywhere.
+
 **Install**
 
 ![how to install](https://nodei.co/npm/is-object-brace.png?mini=true)
@@ -28,23 +30,28 @@ Just use `npm install is-object-brace` command. Of course you can use `--save-de
 **Code details,**
 
 ```js
+...
+
 var isObjectBrace, rslt;
+
+...
 
 isObjectBrace = require('is-object-brace')
 
-rslt = isObjectBrace({});                              //output: true
+rslt          = isObjectBrace({});                              //output: true
 
-rslt = isObjectBrace({1:"a", 2:"b"});                  //output: true
+rslt          = isObjectBrace({1:"a", 2:"b"});                  //output: true
 
-rslt = isObjectBrace(["string", 2, true, new Date()]); //output: false
+rslt          = isObjectBrace(["string", 2, true, new Date()]); //output: false
 
-rslt = isObjectBrace('1');                             //output: false
+rslt          = isObjectBrace('1');                             //output: false
 
-rslt = isObjectBrace(true);                            //output: false
+rslt          = isObjectBrace(true);                            //output: false
 
-rslt = isObjectBrace(new Function());                  //output: false
+rslt          = isObjectBrace(new Function());                  //output: false
 
 ...
+```
 ```
 
 
